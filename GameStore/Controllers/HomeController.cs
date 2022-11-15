@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameStoreLibrary.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,10 @@ namespace GameStore.Controllers
     {
         public ActionResult Index()
         {
+            var game = new GameRepository();
+
+            ViewBag.GoW = game.GetGameById(1);
+
             return View();
         }
 

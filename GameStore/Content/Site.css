@@ -7,8 +7,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    background-image: linear-gradient(#000000, #6A6A6A);
+    background-image: linear-gradient(#272727, #000000);
     padding: 1rem;
 }
 
@@ -17,6 +16,7 @@
     font-size: 5rem;
     padding: 1rem;
     text-decoration: none;
+    margin-left: 10%;
 }
 
     .logo a {
@@ -25,7 +25,7 @@
 
         .logo a:hover {
             transition: 500ms;
-            color: #262222;
+            color: #05E9E6;
             text-decoration: none;
         }
 
@@ -34,6 +34,7 @@
     font-size: 3rem;
     padding: 1rem;
     text-decoration: none;
+    margin-left: 50%;
 }
 
     .navbar-links ul {
@@ -52,6 +53,41 @@
 
                 .navbar-links ul li a:hover {
                     transition: 500ms;
-                    color: #262222;
+                    color: #05E9E6;
                     text-decoration: none;
                 }
+
+/* Index */
+
+.index-lancamentos-label {
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.index-lancamentos-jogos-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 2rem 0;
+}
+
+.index-jogo {
+    text-align: center;
+}
+
+.index-jogo-name {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 1.5rem;
+}
+
+.index-jogo-platform{
+    font-size: 2rem;
+    margin: 1.5rem;
+}
+
+.index-jogo-price {
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}

@@ -23,7 +23,7 @@ namespace GameStore.Controllers
         {
             var game = new GameRepository();
 
-            ViewBag.Carne = game.GetGameById(id);
+            ViewBag.Game = game.GetGameById(id);
 
             return View(game.GetGameById(id));
         }
