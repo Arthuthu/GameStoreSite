@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>GameStore</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -22,13 +22,39 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
+
+    <footer>
+        <div class="footer-div">
+            <div class="assinatura-div">
+                <div class="assinaturas-div-label">
+                    Ganhe descontos e um jogo grátis todos mês!
+                </div>
+                <div>
+                    <button class="assinatura-button">
+                        Assine já!
+                    </button>
+                </div>
+            </div>
+
+            <div class="redes-sociais-div">
+                <div>
+                    Siga a gente nas redes sociais para ficar por dentro de novidades.
+                </div>
+
+                <div class="footer-icones">
+                    <a href="#" class="fa fa-facebook" id="socialmedia-icons"></a>
+                    <a href="#" class="fa fa-twitter" id="socialmedia-icons"></a>
+                    <a href="#" class="fa fa-instagram" id="socialmedia-icons"></a>
+                    <a href="#" class="fa fa-youtube" id="socialmedia-icons"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </body>
 </html>

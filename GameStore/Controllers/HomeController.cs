@@ -14,6 +14,8 @@ namespace GameStore.Controllers
             var game = new GameRepository();
 
             ViewBag.GoW = game.GetGameById(1);
+            ViewBag.EldenRing = game.GetGameById(2);
+            ViewBag.CoDMW2 = game.GetGameById(1003);
 
             return View();
         }
