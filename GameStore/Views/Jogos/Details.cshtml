@@ -5,39 +5,39 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
 
 <div>
-    <h4>GameModel</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
+    <dl class="details-dl">
+        <dt class="details-label">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
 
-        <dd>
+        <dd class="details-information">
             @Html.DisplayFor(model => model.Name)
         </dd>
 
-        <dt>
+        <dt class="details-label">
             @Html.DisplayNameFor(model => model.Platform)
         </dt>
 
-        <dd>
+        <dd class="details-information">
             @Html.DisplayFor(model => model.Platform)
         </dd>
 
-        <dt>
+        <dt class="details-label">
             @Html.DisplayNameFor(model => model.Price)
         </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
+        <dd class="details-information">
+            R$@Html.DisplayFor(model => model.Price)
         </dd>
 
     </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="voltar-button-div">
+    <button class="voltar-button">
+        @Html.ActionLink("Voltar", "Index", "Home")
+    </button>
+</div>
+
