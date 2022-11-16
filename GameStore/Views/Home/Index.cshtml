@@ -4,6 +4,8 @@
     var gow = ViewBag.Gow;
     var eldenring = ViewBag.EldenRing;
     var codmw2 = ViewBag.CoDMW2;
+    var fifa = ViewBag.Fifa;
+    var spiderman = ViewBag.SpiderMan;
 }
 
 <div>
@@ -12,7 +14,7 @@
     </div>
 
     <div class="index-lancamentos-jogos-div">
-        <div class="index-jogo">
+        <a class="index-jogo" href="~/jogos/details/@gow.Id" id="gow-mais-vendidos">
             <div class="index-jogo-name">
                 @gow.Name
             </div>
@@ -25,37 +27,37 @@
             <div class="index-jogo-price">
                 R$@gow.Price
             </div>
-        </div>
+        </a>
 
-        <div class="index-jogo">
+        <a class="index-jogo" href="~/jogos/details/@fifa.Id">
             <div class="index-jogo-name">
-                @gow.Name
+                @fifa.Name
             </div>
             <div class="index-foto">
-                <img src="~/Content/img/gow.jpg" />
+                <img src="~/Content/img/fifa23.jpg" />
             </div>
             <div class="index-jogo-platform">
-                @gow.Platform
+                @fifa.Platform
             </div>
             <div class="index-jogo-price">
-                R$@gow.Price
+                R$@fifa.Price
             </div>
-        </div>
+        </a>
 
-        <div class="index-jogo">
+        <a class="index-jogo" href="~/jogos/details/@spiderman.Id">
             <div class="index-jogo-name">
-                @gow.Name
+                @spiderman.Name
             </div>
             <div class="index-foto">
-                <img src="~/Content/img/gow.jpg" />
+                <img src="~/Content/img/spiderman.jpg" />
             </div>
             <div class="index-jogo-platform">
-                @gow.Platform
+                @spiderman.Platform
             </div>
             <div class="index-jogo-price">
-                R$@gow.Price
+                R$@spiderman.Price
             </div>
-        </div>
+        </a>
     </div>
 </div>
 
@@ -69,7 +71,7 @@
     </div>
 
     <div class="index-lancamentos-jogos-div">
-        <div class="index-jogo">
+        <a class="index-jogo" id="gow-mais-vendidos" href="~/jogos/details/@gow.Id">
             <div class="index-jogo-name">
                 @gow.Name
             </div>
@@ -82,10 +84,10 @@
             <div class="index-jogo-price">
                 R$@gow.Price
             </div>
-        </div>
+        </a>
 
-        <div class="index-jogo">
-            <div class="index-jogo-name">
+        <a class="index-jogo" href="~/jogos/details/@eldenring.Id">
+            <div class="index-jogo-name" id="eldenring-mais-vendidos">
                 @eldenring.Name
             </div>
             <div class="index-foto">
@@ -97,9 +99,9 @@
             <div class="index-jogo-price">
                 R$@eldenring.Price
             </div>
-        </div>
+        </a>
 
-        <div class="index-jogo">
+        <a class="index-jogo" href="~/jogos/details/@codmw2.Id">
             <div class="index-jogo-name">
                 @codmw2.Name
             </div>
@@ -112,7 +114,7 @@
             <div class="index-jogo-price">
                 R$@codmw2.Price
             </div>
-        </div>
+        </a>
     </div>
 </div>
 

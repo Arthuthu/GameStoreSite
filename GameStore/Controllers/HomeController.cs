@@ -16,6 +16,8 @@ namespace GameStore.Controllers
             ViewBag.GoW = game.GetGameById(1);
             ViewBag.EldenRing = game.GetGameById(2);
             ViewBag.CoDMW2 = game.GetGameById(1003);
+            ViewBag.Fifa = game.GetGameById(2002);
+            ViewBag.SpiderMan = game.GetGameById(2003);
 
             return View();
         }
