@@ -6,27 +6,34 @@
     var games = ViewBag.Games;
 }
 
-@{ 
-<div class="row">
-    @foreach (var game in games)
-    {
-        <a class="col-md-12" id="game-display" href="jogos/details/@game.Id">
-            <div class="game-name-platform">
-                <div class="game-name">
-                    @game.Name -
+@{
+    <div class="row">
+        @foreach (var game in games)
+        {
+            <a class="col-md-12" id="game-display" href="jogos/details/@game.Id">
+                <div class="game-name-platform">
+                    <div class="game-name">
+                        @game.Name -
+                    </div>
+
+                    <div class="game-platform">
+                        @game.Platform
+                    </div>
                 </div>
 
-                <div class="game-platform">
-                    @game.Platform
+                <div class="game-price">
+                    R$@game.Price
                 </div>
-            </div>
-
-            <div class="game-price">
-                R$@game.Price
-            </div>
-        </a>
-    }
-</div> 
+            </a>
+        }
+    </div>
 
 }
+
+<div class="voltar-button-div">
+    <a class="voltar-button" href="~/Home">
+        Voltar
+    </a>
+</div>
+
 

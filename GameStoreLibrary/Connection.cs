@@ -13,7 +13,7 @@ namespace GameStoreLibrary
 
         public Connection()
         {
-            cnnDatabase = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=GameStoreDatabase;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+            cnnDatabase = new SqlConnection("Data Source=DESKTOP-C67RUF1\\SQLEXPRESS;Initial Catalog=GameStoreDatabase;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
     }
 }

@@ -59,6 +59,10 @@
 
 /* Index */
 
+#fifa-box {
+    padding-top: 3rem;
+}
+
 .index-lancamentos-label {
     font-weight: bold;
     font-size: 4rem;
@@ -160,30 +164,25 @@
 
 .voltar-button-div {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .voltar-button {
     background: #FFF;
     border-radius: 1.5rem;
     padding: 2rem 4rem;
-}
-
-.voltar-button a{
     color: #000;
+    border-style: groove;
+    border-color: #000;
     font-size: 2rem;
     font-weight: bold;
-}
-
-.voltar-button a:hover{
-    text-decoration: none;
-    color: white;
 }
 
     .voltar-button:hover {
         transition: 500ms;
         text-decoration: none;
         background: #E7E7E7;
+        color: #000;
     }
 
 .details-dl{
